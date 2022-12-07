@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acme Flowers Garden</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-yellow-50">
+	<header class="bg-red-800 text-white sticky top-0 z-10"> 
+	<section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+		<h1 class="text-3xl font-medium"><a href="#flower">🏵️<span class="text-green-300 white:text-100">Garden Flowers</span></a></h1>
+		
+		<!-- <div class="flex items-center justify-end border-l lg:border-l-0">
+			<input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+			<label for="hamburger" class="peer-checked: block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
+			<div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+			<div aria-hidden="true" class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"></div>
+		</label>
+		</div> -->
+
+		<div>
+			<button id="hamburger-button" class="text-4xl md:hidden cursor-pointer relative w-8 h-8">
+				<!-- &#9776; -->
+				<div class="absolut top-4 -mt-0.5 w-8 h-1 rounded bg-white 
+				transition-all duration-500
+				before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:abcolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500
+				after:content[''] after:bg-white after:w-8 after:h-1 after:rounded after:abcolute after:transition-all after:translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+			</div>
+			</button>
+
+				<nav class="hidden md:block space-x-3 text-xl" aria-label="main">
+				<a href="#flowers" class="hover:opacity-90">Our Flowers</a>
+				<a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+				<a href="#contact" class="hover:opacity-90">Contact Us</a>
+			</nav>
+		</div>	
+	</section>
+
+	<section id="mobile-menu" class="absolute top-68 bg-yellow-500 w-full text-2xl flex-col justify-content-center origin-top animate-open-menu hidden">
+	<!-- <button class="text-5xl self-end px-5">
+		&times;
+	</button> -->
+	<nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+		<a href="#flower" class="w-full text-center py-6 hover:opacity-90">Home</a>
+		<a href="#flowers" class="w-full text-center py-6 hover:opacity-90">Our Flowers</a>
+		<a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
+		<a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
+		<a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
+	</nav>
+	</section>  
+	</header> 
+	<main class="max-w-4xl mx-auto">
+		<section id="flower" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+			<article class="sm:w-1/2">
+			<h2 class="max-w-md text-5xl font-bold text-center sm:text-5sl sm:text-left text-white text-red-200">We Boldy Go <span class="text-indigo-700 white:text-indigo-300"> Where No Rockets</span>  Has <span class="text-green-700 white:text-green-300"> Gone</span> Before <span class="text-indigo-700 white:text-indigo-300">...</span></h2>
+			<p class="max-w-md text-2xl mt-4 text-center sm:text-left text-red-700 white:text-red-400">
+				We're building a new house where will live love and understanding.
+			</p>
+			<p class="max-w-md text-2xl mt-4 text-center sm:text-left text-red-700 white:text-red-400">Think Acme Flowers Garden.</p>
+			</article>
+			<img class="w-1/2" src="./img/flower 1.jpg" alt="Rocket Dab">
+		</section>
+
+		<hr class="mx-auto bg-white bg-red-800 w-1/2">
+
+		<section id="flowers" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+			<h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-blue-900 text-white">
+				Our Flowers
+			</h2>
+			<ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+				<li class="w-2/3 sm:5/6 flex flex-col items-center border border-solid border-red-900 white:border-red-100 bg-red-100 white:bg-red py-6 px-2 rounded-3xl shadow-xl">
+					<img src="./img/flower 2.jpg" alt="Explore" class="w-1/2 mb-6">
+					<h3 class="text-3xl text-center text-red-900 white:text-red-400">
+						Traveler
+					</h3>
+					<p class="hidden sm:block text-3xl text-center mt-2 text-red-500 white:text-red-400">
+						* * *
+					</p>
+					<p class="sm:hidden text-2xl text-center mt-2 text-red-500 white:text-red-400">
+						Summer flowers
+					</p>
+				</li>
+				<li class="w-2/3 sm:5/6 flex flex-col items-center border border-solid border-red-900 white:border-red-100 bg-red-100 white:bg-red py-6 px-2 rounded-3xl shadow-xl">
+					<img src="./img/flower 3.jpg" alt="Explore" class="w-1/2 mb-6">
+					<h3 class="text-3xl text-center text-red-900 white:text-red-400">
+						Adventure
+					</h3>
+					<p class="hidden sm:block text-3xl text-center mt-2 text-red-500 white:text-red-400">
+						* * *
+					</p>
+					<p class="sm:hidden text-2xl text-center mt-2 text-red-500 white:text-red-400">
+						Nature flowers
+					</p>
+				</li>
+				<li class="w-2/3 sm:5/6 flex flex-col items-center border border-solid border-red-900 white:border-red-100 bg-red-100 white:bg-red py-6 px-2 rounded-3xl shadow-xl">
+					<img src="./img/flower 4.jpg" alt="Explore" class="w-1/2 mb-6">
+					<h3 class="text-3xl text-center text-red-900 white:text-red-400">
+						University
+					</h3>
+					<p class="hidden sm:block text-3xl text-center mt-2 text-red-500 white:text-red-400">
+						* * *
+					</p>
+					<p class="sm:hidden text-2xl text-center mt-2 text-red-500 white:text-red-400">
+						Spring flowers
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<hr class="mx-auto bg-white bg-red-900 w-1/2">
+
+		<section id="testimonials" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+			<h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-blue-900 text-white">
+				Testimonials
+			</h2>
+			<figure class="my-12">
+				<blockquote class="bg-pink-100 dark:bg-pink-100 pl-14 p-8 py-12 rounded-3xl relative">
+					<p class="text-2xl sm:text-3xl text-left mt-2 text-red-400 white: text-red-400 before:content-['\275B'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-red before:opacity-25 before:transform before:translate-x-2 after:content-['\275C'] after:font-serif after:absolute after:bottom-20 after:right-0 after:text-9xl after:text-red after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"> 
+						Acme has always been there for me. Their flowers very beautiful. Come and shopping!
+					</p>
+				</blockquote>
+					<figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-pink-500 white:text-pink-400">
+							
+							&#8212; Easy to Grow Flowers
+					</figcaption>
+			</figure>
+			<figure class="my-12">
+				<blockquote class="bg-pink-100 dark:bg-pink-400 pl-14 p-8 py-12 rounded-3xl relative">
+					<p class="text-2xl sm:text-3xl text-left mt-2 text-red-400 white: text-red-400 before:content-['\275B'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-red before:opacity-25 before:transform before:translate-x-2 after:content-['\275C'] after:font-serif after:absolute after:bottom-20 after:right-0 after:text-9xl after:text-red after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+					<span class="italic text-pink-700 white:text-pink-300"> Looking for some flower facts?</span></p>
+					<br>
+					<br>
+					<p class="text-2xl sm:text-3xl text-left mt-2 text-red-400 white: text-red-400 before:content-['\275B'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-red before:opacity-25 before:transform before:translate-x-2 after:content-['\275C'] after:font-serif after:absolute after:bottom-20 after:right-0 after:text-9xl after:text-red after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+						Flowers beguile us with their lovely scent and striking beauty,
+					but many flowers have hidden attributes. Flowers and plants
+					have been used medicinally for thousands of years. Some flowers,
+					such as the lotus, have religious or historical significance.
+					Many flowers may also have unusual characteristics or forms. 
+					Dive into the fascinating world of flower-lore and gain a fresh 
+					appreciation for these plants.
+					</p>
+				</blockquote>
+					<figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-pink-500 white:text-pink-400">							
+							&#8212; Easy to Grow Flowers
+					</figcaption>
+			</figure>
+			<figure class="my-12">
+				<blockquote class="bg-pink-100 dark:bg-pink-100 pl-14 p-8 py-12 rounded-3xl relative">
+					<p class="text-2xl sm:text-3xl text-left mt-2 text-red-400 white: text-red-400 before:font-serif before:content-['\275B'] before:absolute before:top-0 before:left-0 before:text-9xl before:text-red before:opacity-25 before:transform before:translate-x-2 
+					after:font-serif after:absolute after:bottom-20 after:right-0 after:text-9xl after:text-red after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2 after:content-['\275C']">
+					Acme has always grown the nature flowers in their gardens.   
+					The next time you walk through the  <span class=" italic text-green-700 white:text-green-300" >"Acme Flowers Garden"</span>, 
+					take a minute to consider the individual plants growing there.
+					One of them may hold the secret for curing a dreaded disease.
+					Another may have a long, illustrious history. 
+					Every flower has qualities and attributes worth admiring.
+					</p>
+				</blockquote>
+					<figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-pink-500 white:text-pink-400">							
+							&#8212; Easy to Grow Flowers
+					</figcaption>
+			</figure>
+		</section>
+
+		<hr class="mx-auto bg-white bg-red-800 w-1/2">
+
+		<section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+			<h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-blue-900 text-white">
+				Contact Us
+			</h2>
+			<form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+				<div class="mb-6">
+					<label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+					<input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
+				</div>
+								
+				<!-- <label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject" 
+				class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border-solid border-black-900 white:border-none" /> -->
+
+				<label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+				<textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+
+				<!-- <label for="message">Message:</label>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-2xl p-4 rounded-xl border-solid border-black border-none"></textarea> -->
+				
+				<button type="button" class="text-white bg-blue-700 hover:bg-blue-400 focus:ring-4 focus:ring-blue-500 font-medium p-3 w-48 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
+				<!-- <botton class="bg-blue-500 hover:bg-blue-400 active:bg-blue-300 text-white p-3 w-48 rounded-xl border-solid border-black-900 white:border-none">Submit</botton> -->
+			</form>
+		</section>
+	</main>
+
+	
+	<footer class="p-4 bg-red-900 text-white text- xl rounded-lg shadow md:px-6 md:py-8">
+	<section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+		<address>
+			<h2>
+				Acme Flowers Garden - Wonderful Products, Inc.</h2>
+				555 Astro Way 
+				Fairfied,New Jersey 12345-55555 <br>
+				Email: <a href="maitlo:inquires@acmegarden.com">Inquires@Acmegarden.com</a> <br>
+				Phone:<a href="tel:+15555555555555">(555) 555-5555</a>
+		</address>
+		<nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+			<a href="#flowers" class="hover:opacity-90">Our Flowers</a>
+			<a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+			<a href="#contact" class="hover:opacity-90">Contact Us</a>
+		</nav>
+		<div class="flex flex-col sm:gap-2">
+			<p class="text-right">Copyright &copy; <span id="year">2022</span></p>
+			<p class="text-right">All rights Reserved</p>
+		</div>
+	</section>
+</body>
+</html>
